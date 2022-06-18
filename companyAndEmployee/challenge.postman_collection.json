@@ -1,0 +1,523 @@
+{
+	"info": {
+		"_postman_id": "68b8d50e-bb19-4057-bf21-8b3f24f485ce",
+		"name": "challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21474343"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/company/list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/company/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"company",
+						"list"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/company/list",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/company/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"company",
+								"list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "146"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 18 Jun 2022 04:39:42 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Company Id: 6---Company Name:Balbarson\nCompany Id: 8---Company Name:gred\nCompany Id: 9---Company Name:trewqq\nCompany Id: 10---Company Name:trewqq\n"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/company/savee?companyId=9&companyName=gredie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/companySavee?companyId=9&companyName=gredie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"companySavee"
+					],
+					"query": [
+						{
+							"key": "companyId",
+							"value": "9"
+						},
+						{
+							"key": "companyName",
+							"value": "gredie"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/companySavee?companyId=9&companyName=gredie",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/company/savee?companyId=11&companyName=trewqq",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"company",
+								"savee"
+							],
+							"query": [
+								{
+									"key": "companyId",
+									"value": "11"
+								},
+								{
+									"key": "companyName",
+									"value": "trewqq"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "35"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 18 Jun 2022 03:33:15 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Company Id: 11\nCompany Name: trewqq"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/employee/savee?employeeId=1&employeeTc=12345678922&employeeName=EjderiKahr&employeeSurname=Akın&employeeEmail=example@gmail.com&employeeSalary=5555&employeeGener=E&companyId=2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employeeSavee?employeeId=1&employeeTc=12345678922&employeeName=EjderiKahr&employeeSurname=Akın&employeeEmail=example@gmail.com&employeeSalary=5555&employeeGener=E&companyId=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employeeSavee"
+					],
+					"query": [
+						{
+							"key": "employeeId",
+							"value": "1"
+						},
+						{
+							"key": "employeeTc",
+							"value": "12345678922"
+						},
+						{
+							"key": "employeeName",
+							"value": "EjderiKahr"
+						},
+						{
+							"key": "employeeSurname",
+							"value": "Akın"
+						},
+						{
+							"key": "employeeEmail",
+							"value": "example@gmail.com"
+						},
+						{
+							"key": "employeeSalary",
+							"value": "5555"
+						},
+						{
+							"key": "employeeGener",
+							"value": "E"
+						},
+						{
+							"key": "companyId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/employeeSavee?employeeId=1&employeeTc=12345678922&employeeName=EjderiKahr&employeeSurname=Akın&employeeEmail=example@gmail.com&employeeSalary=5555&employeeGener=E&companyId=2",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employee/savee?employeeId=5&employeeTc=12345671574&employeeName=EjderiKahrrrrr&employeeSurname=Akın&employeeEmail=example@gmail.com&employeeSalary=5555&employeeGener=E&companyId=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employee",
+								"savee"
+							],
+							"query": [
+								{
+									"key": "employeeId",
+									"value": "5"
+								},
+								{
+									"key": "employeeTc",
+									"value": "12345671574"
+								},
+								{
+									"key": "employeeName",
+									"value": "EjderiKahrrrrr"
+								},
+								{
+									"key": "employeeSurname",
+									"value": "Akın"
+								},
+								{
+									"key": "employeeEmail",
+									"value": "example@gmail.com"
+								},
+								{
+									"key": "employeeSalary",
+									"value": "5555"
+								},
+								{
+									"key": "employeeGener",
+									"value": "E"
+								},
+								{
+									"key": "companyId",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 18 Jun 2022 04:45:32 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"employeeId\": 5,\n    \"employeeTc\": \"12345671574\",\n    \"employeeName\": \"EjderiKahrrrrr\",\n    \"employeeSurname\": \"Akın\",\n    \"employeeEmail\": \"example@gmail.com\",\n    \"employeeSalary\": 5555,\n    \"employeeGender\": \"E\",\n    \"companyId\": 10,\n    \"companyName\": \"trewqq\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/employee/list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employeeList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employeeList"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/employeeList",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employee/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employee",
+								"list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 18 Jun 2022 01:43:01 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"employeeId\": 1,\n        \"employeeTc\": \"12345678922\",\n        \"employeeName\": \"EjderiKahr\",\n        \"employeeSurname\": \"Akın\",\n        \"employeeEmail\": \"example@gmail.com\",\n        \"employeeSalary\": 5555,\n        \"employeeGender\": \"E\",\n        \"companyId\": 5,\n        \"companyName\": \"qwerty\"\n    },\n    {\n        \"employeeId\": 2,\n        \"employeeTc\": \"12345671234\",\n        \"employeeName\": \"EjderiKahr\",\n        \"employeeSurname\": \"Akın\",\n        \"employeeEmail\": \"example@gmail.com\",\n        \"employeeSalary\": 5555,\n        \"employeeGender\": \"E\",\n        \"companyId\": 6,\n        \"companyName\": \"Balbarson\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/company/delete?companyDeleteId=15",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/company/delete/id?companyDeleteId=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"company",
+						"delete",
+						"id"
+					],
+					"query": [
+						{
+							"key": "companyDeleteId",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/companyDeleteId?companyDeleteId=15",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/company/delete/id?companyDeleteId=6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"company",
+								"delete",
+								"id"
+							],
+							"query": [
+								{
+									"key": "companyDeleteId",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "54"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 18 Jun 2022 04:39:54 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Company Deleted\n\nCompany Id: 6\nCompany Name: Balbarson"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/employee/delete/Id?employeeDeleteById=1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employeeDeleteId?employeeDeleteById=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employeeDeleteId"
+					],
+					"query": [
+						{
+							"key": "employeeDeleteById",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/employeeDeleteId?employeeDeleteById=1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employee/delete/id?employeeDeleteById=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employee",
+								"delete",
+								"id"
+							],
+							"query": [
+								{
+									"key": "employeeDeleteById",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "230"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 18 Jun 2022 05:05:34 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Method Name : employeeDeleteById\nEmployee ID: 1\nEmployee Tc: 1234\nEmployee Name: EjderiKahrrrrr\nEmployee Surname: Akın\nEmployee Email: example@gmail.com\nEmployee Salary: 5555\nEmployee Gender: E\nCompany Id: 10\nCompany Name: trewqq"
+				}
+			]
+		}
+	]
+}
